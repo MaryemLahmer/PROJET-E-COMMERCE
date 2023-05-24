@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <section id="slider">
+        <div class="slider">
+          <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="slider/lavendergirl.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/yellozman.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/whiteboy.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/indigogirl.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/redman.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/orangegirl.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/greyman.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/violetgirl.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/blueman.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/skygirl.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/blackboy.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/redwoman.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/brownman.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/skyygirl.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/rainbowgirl.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/pinkman.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/redlady.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/whitecouple.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="slider/greygirl.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+      </div>
+      </section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:2000,
+            disableOnInteraction:false,
+        },
+    loop: true,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',},
+
+  
+});
+</script>
+</body>
+</html>
