@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@400;700&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color:#222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+hr{
+    width:90px;
+    height:4px;
+    background-color: #fb774b;
+    border: none;
+    margin-top: 3px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.star i{
+    margin-top:10px ;
+    margin-bottom:10px ;
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+p{
+    font-size: 16px;
+    color:#465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 48px 80px;
+}
+
+.section-m1{
+    margin:40px 0;
+}
+body{
+    width: 100%;
+}
+
+/* header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.lavender{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.lavender img{
+    width: 6rem;
+    height:6rem;
+}
+.lavender a{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+#navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color:#1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color:#4C0033;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width:20px;
+    height:2px;
+    background: #4C0033;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#contact_header{
+    text-align: center;
+    
+    
+}
+
+#contact-details{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+#contact-details .formulaire{
+    width: 45%;
+}
+   
+
+.formulaire{
+    width: 45%;
+    width:140px;
+    height:42em;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px rgba(0, 0, 0, 0.815);
+    margin:calc(32vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+#form label{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+p[type="Name:"]::before {
+    content: "Name:";
+    font-size: 20px;
+    font-weight:bold;
+  }
+  p[type="Email:"]::before {
+    content: "Email:";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p[type="Phone Number:"]::before {
+    content: "Phone Number:";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p[type="Message:"]::before {
+    content: "Message:";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+#form input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;resize:none;
+    border:0;
+    font-size: 1em;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+    }
+
+#form input:focus{
+    border-bottom:3px solid #78788c}
+
+#form p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    color:#5a5a5a
+}
+#form  button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+#form button:hover{
+    background:#78788c;
+    color:#fff}
+#form  div{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;
+    right:-20px;
+    background:#50505a;
+    color:#fff;width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000}
+
+#form span{
+    margin:0 5px 0 15px
+}
+.details{
+    height: 58em;
+
+}
+    
+#contact-details .details{
+    height:40%;
+    width:45%;
+    background: #e6e6e6 ;    
+    border-radius:6px;
+    padding:15px 15px 16px 33px;
+    margin-left: 50px;
+    border-radius:  6px;
+    box-shadow:0 0 40px -10px rgba(0, 0, 0, 0.815);
+}
+#contact-details h2{
+    padding-bottom:2px;
+    width:10em;
+    color:#78788c;
+    border-bottom:3px solid #78788c;
+    font-size: 2em;
+    font-family:'Montserrat',sans-serif;
+
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #bebed2;
+}
+#contact-details .details li i {
+    font-size: 25px;
+    padding-right: 22px;
+}
+.textmessage{
+    resize: none;
+    width: 100%;
+    height: 11em;
+     margin-top: 5px;
+    background-color: transparent;
+    outline: none;
+    border-bottom:1px solid #bebed2;
+    border-radius: 8px;
+    padding-top: 6px;
+    padding-left: 5px;
+
+}
+
+.textmessage::placeholder{
+    font-size: 16px;
+    
+}
+#error {
+    display: none; 
+    position: absolute; 
+    color: red;
+    top: 21%;
+    right:35%;    
+    transform: translateY(-50%); 
+    width: 500px; 
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#error1 {
+    display: none; /* hide the icon by default */
+    position: absolute; /* position the icon absolutely */
+    color: red;
+    top: 35%; /* align the icon vertically */
+    right:35%;    
+    transform: translateY(-50%); /* center the icon vertically */
+    width: 500px; /* set the icon width */
+    height: 24px; /* set the icon height */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#error2{
+    display: none; 
+    position: absolute; /* position the icon absolutely */
+
+    color: red;
+    top: 49%; /* align the icon vertically */
+    right:35%;    
+    transform: translateY(-50%); /* center the icon vertically */
+    width: 500px; /* set the icon width */
+    height: 24px; /* set the icon height */
+    background-repeat: no-repeat; /* prevent the icon from repeating */
+    background-size: contain;
+}
+#error3{
+    display: none; /* hide the icon by default */
+    position: absolute; /* position the icon absolutely */
+    color: red;
+    top: 49%; /* align the icon vertically */
+    right:35%;    
+    transform: translateY(-50%); /* center the icon vertically */
+    width: 500px; /* set the icon width */
+    height: 24px; /* set the icon height */
+    background-repeat: no-repeat; /* prevent the icon from repeating */
+    background-size: contain;
+}
+
