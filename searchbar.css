@@ -1,605 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="searchbar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
-  rel="stylesheet"  type='text/css'>
-
-</head>
-<body>
-
-    <section id="header">
-        <div class="lavender">
-          <a href="#"><img src="images/lavender.jpg" alt=""></a>
-          <a href="#" >Lavender Haze</a>
-        </div>
-        
-        <div>
-          <ul id="navbar">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="Boutique.html">Shop</a></li>
-            <li><a href="Blog.html">About Us</a></li>
-            <li><a href="contact.html"><i class="fa-regular fa-user"></i></a></li>
-          </ul>
-        </div>
-      </section>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="search">
-                <h1> ALL PRODUCTS</h1>
-                
-                <input type="text" name="" id="find" placeholder="
-                search here ...." onkeyup="search()">
-            </div>
-            <div class="product-list">
-                <div class="product">
-                    <img src="man/sports/shirt beige 2.jpg" alt="">
-                    <h3>beige shirt</h3>
-                    <h4>90 DT  - <del>105 DT</del></h4>
-
-                </div> <div class="product">
-                    <img src="man/sports/shirt black.jpg" alt="">
-                    <h3>Black Shirt</h3>
-                    <h4>75 DT  - <del>99 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="man/sports/shirt beige.jpg" alt="">
-                    <h3>Shirt beige</h3>
-                    <h4>85 DT  - <del>100 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/shirt striped white.jpg" alt="">
-                    <h3>stripped white shirt</h3>
-                    <h4>90 DT  - <del>105 DT</del></h4>
-
-                </div> <div class="product">
-                    <img src="man/sports/shirt striped.jpg" alt="">
-                    <h3>Stripped Shirt</h3>
-                    <h4>75 DT  - <del>99 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="man/sports/shirt white.jpg" alt="">
-                    <h3>Shirt white</h3>
-                    <h4>85 DT  - <del>100 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/classy/shirt white 7.jpg" alt="">
-                    <h3>white shirt</h3>
-                    <h4>90 DT  - <del>105 DT</del></h4>
-
-                </div> <div class="product">
-                    <img src="man/classy/shirt pink.jpg" alt="">
-                    <h3>Pink Shirt</h3>
-                    <h4>75 DT  - <del>99 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="man/classy/shirt blue.jpg" alt="">
-                    <h3>Blue white</h3>
-                    <h4>85 DT  - <del>100 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/dress/dress black 28.jpg" alt="">
-                    <h3>Black Sleevless Dress</h3>
-                    <h4>210 DT  - <del>260 DT </del></h4>
-                </div>
-                <div class="product">
-                    <img src="women/dress/dress grey.jpg" alt="">
-                    <h3>Black Poofy Dress</h3>
-                    <h4>180 DT  - <del>210 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/dress/dress green.jpg" alt="">
-                    <h3>Green Forest Dress</h3>
-                    <h4>85 DT  - <del>100 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/dress/dress red.jpg" alt="">
-                    <h3>Maroon Dress</h3>
-                    <h4>210 DT  - <del>260 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/dress/dress black.jpg" alt="">
-                    <h3>Black Strapped dress</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/combinaison/combinaison black.jpg" alt="">
-                    <h3>Combinaison black</h3>
-                    <h4>280 DT  - <del>300 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/dress/dress red 1.jpg" alt="">
-                    <h3>Red Velvet Dress</h3>
-                    <h4>155 DT - <del>178 DT</del></h4>
-                </div>
-                <div class="product">
-                    <img src="women/dress/dress maroon.jpg" alt="">
-                    <h3>Maroon Dress</h3>
-                    <h4>price  - <del>price2 </del></h4>
-                </div>
-                <div class="product">
-                    <img src="women/dress/dress green 56.jpg" alt="">
-                    <h3>Green Dress</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/combinaison/combinaison pink.jpg" alt="">
-                    <h3>Pink Combinaison</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/combinaison/combinaison red.jpg" alt="">
-                    <h3>Red Combinaison</h3>
-                    <h4>140 DT  - <del>185 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/jeans 1.jpg" alt="">
-                    <h3>Jeans</h3>
-                    <h4>135 DT  - <del>170 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/jeans.jpg" alt="">
-                    <h3>Jeans</h3>
-                    <h4>135 DT  - <del>170 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/combinaison/jeans.jpg" alt="">
-                    <h3>Skinny Jeans</h3>
-                    <h4>130 DT  - <del>170 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/classy/pants black.jpg" alt="">
-                    <h3>Black Pants</h3>
-                    <h4>135 DT  - <del>170 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/classy/pants cargo 1.jpg" alt="">
-                    <h3>Cargo Pants</h3>
-                    <h4>135 DT  - <del>170 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/dress/salopette.jpg" alt="">
-                    <h3>Salopette Beige</h3>
-                    <h4>85 DT  - <del> 100 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/hoodie maroon.jpg" alt="">
-                    <h3>hoodie maroon</h3>
-                    <h4>120 DT  - <del>150 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/hoodie white 3.jpg" alt="">
-                    <h3>hoodie white</h3>
-                    <h4>150 DT  - <del>185 DT </del></h4>
-
-                </div><div class="product">
-                    <img src="man/sports/hoodie pink.jpg" alt="">
-                    <h3>hoodie pink</h3>
-                    <h4>90 DT  - <del>120 DT </del></h4>
-
-                </div><div class="product">
-                    <img src="man/sports/hoodie black and white.jpg" alt="">
-                    <h3>hoodie black and white</h3>
-                    <h4>180 DT  - <del>205 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/hoodie white 3.jpg" alt="">
-                    <h3>hoodie white</h3>
-                    <h4>150 DT  - <del>185 DT </del></h4>
-
-                </div><div class="product">
-                    <img src="man/sports/hoodie black.jpg" alt="">
-                    <h3>hoodie black</h3>
-                    <h4>180 DT  - <del>200 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/hoodie maroon1.jpg" alt="">
-                    <h3>hoodie black</h3>
-                    <h4>150 DT  - <del>185 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/jacket.jpg" alt="">
-                    <h3>Jacket</h3>
-                    <h4>220 DT  - <del>250 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/combinaison/jacket.jpg" alt="">
-                    <h3>Jacket</h3>
-                    <h4>220 DT  - <del>250 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/classy/blazer blue 5.jpg" alt="">
-                    <h3>Blazer</h3>
-                    <h4>210 DT  - <del>266 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/classy/blazer grey.jpg" alt="">
-                    <h3>Blazer Grey</h3>
-                    <h4>220 DT  - <del>240 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/combinaison/jacket black.jpg" alt="">
-                    <h3>Black Jacket</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div><div class="product">
-                    <img src="man/classy/jacket black 7.jpg" alt="">
-                    <h3>Black Jacket</h3>
-                    <h4>220 DT  - <del>240 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/classy/jacket gray 7.jpg" alt="">
-                    <h3>GREY Jacket</h3>
-                    <h4>230 DT  - <del>290 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/shoes/shoes blue.jpg" alt="">
-                    <h3>Blue Shoes</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/shoes/shoes white tall.jpg" alt="">
-                    <h3>white shoes</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/shoes/shoes black 67.jpg" alt="">
-                    <h3>black shoes</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/shoes/shoes red 22.jpg" alt="">
-                    <h3>red shoes</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/shoes vans 1.jpg" alt="">
-                    <h3>vans shoes</h3>
-                    <h4>150 DT  - <del>188 DT </del></h4>
-
-                </div><div class="product">
-                    <img src="man/sports/shoes vans red.jpg" alt="">
-                    <h3>red vans shoes</h3>
-                    <h4>150 DT - <del>188 DT </del></h4>
-
-                </div><div class="product">
-                    <img src="man/sports/shorts beach.jpg" alt="">
-                    <h3>beach shorts</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/pants striped green white.jpg" alt="">
-                    <h3>Shorts striped</h3>
-                    <h4>100 DT  - <del>139 DT </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/sports/shorts beige.jpg" alt="">
-                    <h3>beige shorts</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/bag black.jpg" alt="">
-                    <h3>Black Bag</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/beanie black.jpg" alt="">
-                    <h3>black beanie</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/beanie.jpg" alt="">
-                    <h3>beanie</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/beanie white playboy.jpg" alt="">
-                    <h3>white beanie</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/beanie maroon.jpg" alt="">
-                    <h3>beanie maroon</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/beanie white.jpg" alt="">
-                    <h3>white beanie</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/bag red.jpg" alt="">
-                    <h3>red bag</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/bag flower.jpg" alt="">
-                    <h3>flower bag</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/bag color.jpg" alt="">
-                    <h3>summer bag</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/bag black.jpg" alt="">
-                    <h3>black bag</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/bracelet color.jpg" alt="">
-                    <h3>color bracelet</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/belt beige.jpg" alt="">
-                    <h3>belt beige</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/belt.jpg" alt="">
-                    <h3>belt</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                
-                <div class="product">
-                    <img src="man/accessories/bracelet.jpg" alt="">
-                    <h3>bracelet</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/chouchou white.jpg" alt="">
-                    <h3>Coochie</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/shades black.jpg" alt="">
-                    <h3>shades</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/shades.jpg" alt="">
-                    <h3>shades</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/glasses.jpg" alt="">
-                    <h3>shades</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/hat.jpg" alt="">
-                    <h3>hat</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="man/accessories/hat.jpg" alt="">
-                    <h3>hat</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/necklace .jpg" alt="">
-                    <h3>necklace</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/necklace faracha.jpg" alt="">
-                    <h3>butterfly necklace</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/necklace snake.jpg" alt="">
-                    <h3>Necklace Snake</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div>
-                <div class="product">
-                    <img src="women/accessories/ring red.jpg" alt="">
-                    <h3>red ring</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/accessories/ring white.jpg" alt="">
-                    <h3>White Ring</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/accessories/shades .jpg" alt="">
-                    <h3>Shades</h3>
-                    <h4>price  - <del>price2 </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/accessories/shades black.jpg" alt="">
-                    <h3>Black Shades</h3>
-                    <h4>210 DT  - <del>230 DT</del></h4>
-
-                </div> <div class="product">
-                    <img src="women/accessories/watch.jpg" alt="">
-                    <h3>watch</h3>
-                    <h4>169 DT - <del>195 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/eyeliner dior.jpg" alt="">
-                    <h3>eyeliner DIOR</h3>
-                    <h4>38 DT  - <del>45 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/eyeliner marc jacobs.jpg" alt="">
-                    <h3>eyeliner MARC JACOBS</h3>
-                    <h4>45 DT  - <del>59 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/eyeliner ruby rose.jpg" alt="">
-                    <h3>eyeliner</h3>
-                    <h4>38 DT  - <del>45 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/lipstick chanel.jpg" alt="">
-                    <h3>Lipstick CHANEL </h3>
-                    <h4>45 DT  - <del>59 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/mascara dior.jpg" alt="">
-                    <h3>Mascara DIOR</h3>
-                    <h4>45 DT  - <del>60 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/lipstick dior.jpg" alt="">
-                    <h3>Lipstick DIOR </h3>
-                    <h4>63 DT  - <del> 80 DT</del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/lipstick kylie.jpg" alt="">
-                    <h3>Lipstick KYLIE</h3>
-                    <h4>45 DT  - <del>60 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/mascara gucci.jpg" alt="">
-                    <h3>Mascara GUCCI</h3>
-                    <h4>63 DT  - <del> 80 DT</del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/mascara mac.jpg" alt="">
-                    <h3>MASCARA MAC</h3>
-                    <h4>76 DT  - <del>96 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/mascara maybelline.jpg" alt="">
-                    <h3>Mascara MAYBELLINE</h3>
-                    <h4>60 DT  - <del>80 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/parfume dior joy.jpg" alt="">
-                    <h3>Parfum DIOR</h3>
-                    <h4>299 DT  - <del>345 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/parfume dior pure poison.jpg" alt="">
-                    <h3>Parfum DIOR</h3>
-                    <h4>280 DT  - <del>310 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/parfume gucci.jpg" alt="">
-                    <h3>Parfum GUCCI</h3>
-                    <h4>299 DT  - <del>345 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/parfume lancome.jpg" alt="">
-                    <h3>Parfum LANCOME</h3>
-                    <h4>310 DT  - <del>350 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/parfume valentino.jpg" alt="">
-                    <h3>Parfum VALENTINO</h3>
-                    <h4>280 DT  - <del>310 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/parfume versace.jpg" alt="">
-                    <h3>Parfum VERSACE</h3>
-                    <h4>350 DT - <del>399 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/pomp.jpg" alt="">
-                    <h3>Pomp CALVIN KLEIN</h3>
-                    <h4>120 DT  - <del>155 DT </del></h4>
-
-                </div> <div class="product">
-                    <img src="women/cosmetics/shades colorpop.jpg" alt="">
-                    <h3>CALVIN KLEIN shades</h3>
-                    <h4>250 DT  - <del>320 DT </del></h4>
-
-                </div> 
-
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
-        function search(){
-            let filter = document.getElementById("find").value.toUpperCase();
-            let item = document.querySelectorAll(".product");
-            let l = document.getElementsByTagName("h3");
-
-            for(var i =0;i<=l.length;i++){
-                let a=item[i].getElementsByTagName("h3")[0];
-                let value=a.innerHTML || a.innerText || a.textContent;
-
-                if(value.toUpperCase().indexOf(filter) > -1){
-                    item[i].style.display="";
-                }
-                else
-                {
-                    item[i].style.display="none";
-
-                }
-            
-            }
-
-        }
-    </script>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@400;700&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.lavender{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.lavender img{
+    width: 6rem;
+    height:6rem;
+}
+.lavender a{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #810CA8;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color:#1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color:#4C0033;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width:30px;
+    height:2px;
+    background: #4C0033;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+
+}
+h3{
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 400;
+    
+
+}
+h4{
+    color: #d214e7;
+}
+.container-fluid{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 80px 0px;
+    margin-top: 50px;
+
+}
+.container{
+
+width: 1200px;
+height: auto;
+margin: auto;
+}
+.container .search{
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.container .search h1{
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 2px ;
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:#465b52;
+
+}
+.container .search input{
+    width: 60%;
+    padding: 5px 19px;
+    background: transparent;
+    border: 1px solid #000;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    outline: none;
+    border-radius: 25px;
+}
+.container .search input::placeholder{
+    color: #858286;
+    font-weight: 500;
+
+}
+.container .product-list{
+    display: grid;
+    
+    grid-template-columns: auto auto auto auto ;
+
+}
+
+.container .product-list.product{
+    margin-top:30px ;
+}
+
+.container .product-list.product h4{
+    padding:3px 0px ;
+    color: #d214e7;
+    font-weight: 700 ;
+    letter-spacing: 3px;
+}
+.container .product-list .product img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+}
+.product-list .product{
+    margin-bottom: 40px;
+}
+h4{
+    margin-bottom: 5px;
+}
