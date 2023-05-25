@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+    <title>Lavender Haze Form</title>
+</head>
+<body>
+    <section id="header">
+        <div class="lavender">
+          <a href="index.html"><img src="images/lavender.jpg" alt=""></a>
+          <a href="index.html" >Lavender Haze</a>
+        </div>
+        
+        <div>
+          <ul id="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Boutique.html">Shop</a></li>
+            <li><a href="Blog.html">About Us</a></li>
+            <li><a href="searchbar.html"><i class="fa-regular fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="contact.php"><i class="fa-regular fa-user"></i></a></li>
+          </ul>
+        </div>
+      </section>
+    <div class="conteneur">
+        <header class="top">
+            <h1 id="SurveyTitre">Lavender Haze Satisfaction Survey</h1>
+            <p id="intro">
+                Give us some of your time, and we promise you better
+                quality offerings.<br>
+                Go ahead and answer these questions.
+            </p>
+        </header>
+        <form action="connect.php" id="form" method="post">
+            <div class="formulaire">
+                <label class="nejma" for="name">Name</label class="nejma">
+                <input type="text" name="name" id="name" class="prop" placeholder="Enter your name" required>
+            </div>
+            <div class="formulaire">
+                <label class="nejma" for="surname">Surname</label class="nejma">
+                <input type="text" name="surname" id="surname" class="prop" placeholder="Enter your surname" required>
+            </div>
+            <div class="formulaire">
+                <label for="email">Email<span class="option">
+                (optional)</span></label class="nejma">
+                <input type="email" name="email" id="email" class="prop" placeholder="Enter your email" required>
+            </div>
+            <div class="formulaire">
+                <label class="nejma" for="BirthDate">Birth Date
+                </label class="nejma">
+                <input type="date" name="BirthDate" id="BirthDate" class="prop" placeholder="Enter your email" required>
+            </div>
+            <div class="formulaire">
+                <p id="question" class="nejma"> Overall, how satisfied are you with our products</p>
+                <div class="rating">
+                    <input type="radio" name="star" id="star1">
+                    <label  for="star1"></label class="nejma">
+                    <input type="radio" name="star" id="star2">
+                    <label  for="star2"></label class="nejma">
+                    <input type="radio" name="star" id="star3">
+                    <label  for="star3"></label class="nejma">
+                    <input type="radio" name="star" id="star4">
+                    <label  for="star4"></label class="nejma">
+                    <input type="radio" name="star" id="star5">
+                    <label  for="star5"></label class="nejma">
+                </div>
+            </div>
+            <div class="formulaire">
+                <p id="question"class="nejma"> Tell us your top three favorite brand</p>
+                <select name="genre" id="dropdown" class="prop" required>
+                    <option value="disabled" selected>Choose From List</option>
+                    <option value="Adventure">Gucci</option>
+                    <option value="Action">Versace</option>
+                    <option value="Comedy">Calvin Klein</option>
+                    <option value="Drama">Fendi</option>
+                    <option value="Fantasy">Louis Vuitton</option>
+                    <option value="History">Chanel</option>
+                    <option value="Horror">Dior</option>
+                    <option value="Mystery&Crime">burberry</option>
+                    <option value="Romance">Levi's</option>
+                    
+                </select>
+                <select name="genre" id="dropdown" class="prop" required>
+                    <option value="disabled" selected>Choose From List</option>
+                    <option value="Adventure">Gucci</option>
+                    <option value="Action">Versace</option>
+                    <option value="Comedy">Calvin Klein</option>
+                    <option value="Drama">Fendi</option>
+                    <option value="Fantasy">Louis Vuitton</option>
+                    <option value="History">Chanel</option>
+                    <option value="Horror">Dior</option>
+                    <option value="Mystery&Crime">burberry</option>
+                    <option value="Romance">Levi's</option>
+                </select>
+                <select name="genre" id="dropdown" class="prop" required>
+                    <option value="disabled" selected>Choose From List</option>
+                    <option value="Adventure">Gucci</option>
+                    <option value="Action">Versace</option>
+                    <option value="Comedy">Calvin Klein</option>
+                    <option value="Drama">Fendi</option>
+                    <option value="Fantasy">Louis Vuitton</option>
+                    <option value="History">Chanel</option>
+                    <option value="Horror">Dior</option>
+                    <option value="Mystery&Crime">burberry</option>
+                    <option value="Romance">Levi's</option>
+                </select>
+            </div>
+            <div class="formulaire">
+                <p id="question"class="nejma">How much time do you spend on our products?</p>
+                <label for="">
+                    <input type="radio"
+                    name="source1" 
+                    value="Less than 2 hours"
+                    class="inputRadio" >Less than 100dt
+                </label >
+                <label  for="">
+                    <input type="radio"
+                    name="source1" 
+                    value="From 2 to 4 hours"
+                    class="inputRadio" >From 100dt to 200dt
+                </label >
+                <label  for="">
+                    <input type="radio"
+                    name="source1" 
+                    value="From 4 to 6 hours"
+                    class="inputRadio" >From 200dt to 300dt
+                </label >
+                <label  for="">
+                    <input type="radio"
+                    name="source1" 
+                    value="From 6 to 8 hours"
+                    class="inputRadio" >From 300dt to 400dt
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source1" 
+                    value="More than 8 hours"
+                    class="inputRadio" c>More than 400dt
+                </label>
+            </div>
+            <div class="formulaire">
+                <p id="question"class="nejma">Do you stream our page knowing what you want to buy ?</p>
+                <label for="">
+                    <input type="radio"
+                    name="source2" 
+                    value="Yes"
+                    class="inputRadio" 
+                    checked="checked">Yes
+                </label >
+                <label for="">
+                    <input type="radio"
+                    name="source2" 
+                    value="No"
+                    class="inputRadio" >No
+                </label >
+                <div class="formulaire">
+                    <p id="question"class="nejma">How would you describe the sales BingeWatch offers you ?</p>
+                    <label  for="">
+                        <input type="radio"
+                        name="source3" 
+                        value="Very Accurate"
+                        class="inputRadio" >Very Beneficial
+                    </label >
+                    <label  for="">
+                        <input type="radio"
+                        name="source3" 
+                        value="Interesting"
+                        class="inputRadio" >Interesting
+                    </label >
+                    <label for="">
+                        <input type="radio"
+                        name="source3" 
+                        value="Average"
+                        class="inputRadio" >Average
+                    </label >
+                    <label for="">
+                        <input type="radio"
+                        name="source3" 
+                        value="Very inaccurate"
+                        class="inputRadio" >Not Interesting
+                    </label >
+                <div class="formulaire">
+                    <p id="question"class="nejma">What type of collections would you like to see more of on our page ?
+                        <span class="option">(You can choose many)</span>
+                    </p>
+                    <label  for="">
+                        <input type="checkbox" name="content"
+                        class="checkbox" value="Lifestyle">Spring Collection 
+                    </label >
+                    <label  for="">
+                        <input type="checkbox" name="content"
+                        class="checkbox" value="liveTV">Summer Collection 
+                    </label >
+                    <label  for="">
+                        <input type="checkbox" name="content"
+                        class="checkbox" value="Documentaries">Fall Collection
+                    </label >
+                    <label  for="">
+                        <input type="checkbox" name="content"
+                        class="checkbox" value="Asian">Winter collection
+                    </label >
+                    
+                    <div class="formulaire">
+                        <p id="question">Feel free to tell us what you think can help us improve  </p>
+                        <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea"
+                        placeholder="Thank you for your time"></textarea>
+                    </div>
+                    <div class="formulaire">
+                        <div class="captcha">
+                        <label for="captcha-input" class="nejma">Enter captcha to make sure you're not a Bot</label class="nejma">
+                        <div class="preview"></div>
+                        <div class="captcha-form">
+                            <input type="text" id="captcha-form" placeholder="enter captcha text">
+                            <button class="captcha-refresh">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="formulaire">
+                        <button type="submit" id="submit" class="btn">Submit your answers</button>
+                    </div>
+                </div>
+                
+        </form>
+    </div>
+    
+</body>
+</html>
